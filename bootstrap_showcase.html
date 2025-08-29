@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Basics - Bootstrap Showcase</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">WebDev Showcase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Full-Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html_showcase.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="css_showcase.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="bootstrap_showcase.html">Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript_showcase.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="bg-primary text-white text-center py-5 mb-4">
+        <div class="container">
+            <h1 class="display-4">Web Development Basics</h1>
+            <p class="lead">This page introduces the core building blocks of web development using Bootstrap for
+                styling.</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+
+        <section class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">Introduction</h2>
+                    <p class="card-text">Web development is the process of building and maintaining websites. It has
+                        three main pillars:</p>
+                    <ol>
+                        <li><strong>HTML</strong> - the structure of the webpage.</li>
+                        <li><strong>CSS</strong> - the design and styling of the webpage.</li>
+                        <li><strong>JavaScript</strong> - the interactivity and functionality of the webpage.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">HTML Basics</h2>
+                    <p class="card-text">HTML provides the structure of a website through different elements and tags.
+                        Here are some examples:</p>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Tag</th>
+                                    <th>Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                                    <td>Defines headings from largest to smallest.</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;p&gt;</td>
+                                    <td>Defines a paragraph of text.</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;a&gt;</td>
+                                    <td>Creates a hyperlink.</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;img&gt;</td>
+                                    <td>Embeds an image.</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;table&gt;</td>
+                                    <td>Creates a table of rows and columns.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">What is CSS?</h2>
+                    <p class="card-text">CSS (Cascading Style Sheets) is used to style and design the structure created
+                        by HTML.
+                        It controls layout, colors, fonts, and spacing. This section shows how Bootstrap replaces
+                        many manual CSS styles with pre-designed classes.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">What is Bootstrap?</h2>
+                    <p class="card-text">Bootstrap is a powerful CSS framework that makes designing websites faster and
+                        easier.
+                        It includes ready-to-use components such as navigation bars, buttons, tables, forms, and a
+                        responsive grid system.</p>
+                    <p class="card-text">With Bootstrap, developers can quickly create modern and mobile-friendly
+                        designs without writing a lot of custom CSS.</p>
+                    <!-- Example Bootstrap Button -->
+                    <a href="https://getbootstrap.com/" target="_blank" class="btn btn-primary">Learn Bootstrap</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">Bootstrap Grid System</h2>
+                    <p class="card-text">The grid system helps create responsive layouts. Example: three columns on
+                        larger screens that stack on smaller screens.</p>
+
+                    <div class="row text-center">
+
+                        <div class="col-md-4 bg-light border p-4">
+                            <h4 class="text-primary">HTML</h4>
+                            <p>Defines the structure of web pages using tags and elements.</p>
+                            <ul class="list-unstyled">
+                                <li>&lt;h1&gt; Headings</li>
+                                <li>&lt;p&gt; Paragraphs</li>
+                                <li>&lt;a&gt; Links</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-md-4 bg-light border p-4">
+                            <h4 class="text-success">CSS</h4>
+                            <p>Styles the HTML structure to make it look appealing.</p>
+                            <ul class="list-unstyled">
+                                <li>Colors & Fonts</li>
+                                <li>Margins & Padding</li>
+                                <li>Responsive Layouts</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-md-4 bg-light border p-4">
+                            <h4 class="text-warning">JavaScript</h4>
+                            <p>Adds interactivity and dynamic features to web pages.</p>
+                            <ul class="list-unstyled">
+                                <li>Form Validation</li>
+                                <li>Animations</li>
+                                <li>Dynamic Content</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="mb-4 text-center">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">Bootstrap Modal</h2>
+                    <p class="card-text">Click the button below to open a login modal popup.</p>
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginModal">Open
+                        Login Modal</button>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password">
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Login</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <section class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">Bootstrap Form</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="examplePassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="examplePassword"
+                                placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">What is JavaScript?</h2>
+                    <p class="card-text">JavaScript makes web pages interactive. It can validate forms, create
+                        animations, and update content dynamically. Bootstrap also provides JavaScript components like
+                        modals,
+                        carousels, and dropdowns.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+        <div class="container">
+            <h5>What I Learned in 1 Month</h5>
+            <ul class="list-unstyled">
+                <li>How HTML provides structure with tags and elements.</li>
+                <li>How CSS improves design and layout.</li>
+                <li>How Bootstrap speeds up styling with pre-built components.</li>
+                <li>How JavaScript adds interactivity.</li>
+                <li>The importance of combining all three for full web development.</li>
+            </ul>
+            <p class="mb-0">&copy; 2025 Web Development Basics Showcase</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #007acc;
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left: 40px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #fff;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #007acc;
+    color: white;
+}
+
+td,
+th {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Image */
+img {
+    border: 3px solid #007acc;
+    border-radius: 8px;
+}
+
+/* Links */
+a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer ul {
+    list-style: square;
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 20px;
+}
