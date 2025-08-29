@@ -25,10 +25,16 @@
             background: #343a40;
             color: white;
         }
+
+        .action-buttons button {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">WebDev Showcase</a>
@@ -72,6 +78,12 @@
             <button class="btn btn-success" onclick="addItem()">Add</button>
         </div>
 
+        <!-- Action Buttons -->
+        <div class="action-buttons mb-3">
+            <button class="btn btn-danger" onclick="removeLastItem()">Remove Last Item</button>
+            <button class="btn btn-warning" onclick="highlightItems()">Highlight Items</button>
+        </div>
+
         <ul id="learnList" class="list-group">
             <li class="list-group-item">HTML Basics</li>
             <li class="list-group-item">CSS Styling</li>
@@ -86,6 +98,7 @@
             <li>You type something into the input box.</li>
             <li>When you click "Add", a JavaScript function runs.</li>
             <li>The function creates a new list item and inserts it into the existing list.</li>
+            <li>You can also remove the last item or highlight all items using the new buttons.</li>
             <li>No page reload is needed — everything happens instantly in the browser!</li>
         </ol>
     </section>
@@ -102,7 +115,7 @@
         <p>&copy; 2025 Web Development Basics Showcase</p>
     </footer>
 
-    <!-- JavaScript Function -->
+    <!-- JavaScript Functions -->
     <script>
         function addItem() {
             let input = document.getElementById("newItem").value;
@@ -114,7 +127,28 @@
                 document.getElementById("newItem").value = "";
             }
         }
+
+        function removeLastItem() {
+            let list = document.getElementById("learnList");
+            if (list.lastElementChild) {
+                list.removeChild(list.lastElementChild);
+            } else {
+                alert("No items left to remove!");
+            }
+        }
+
+        function highlightItems() {
+            let items = document.querySelectorAll("#learnList li");
+            items.forEach(item => {
+                if (item.style.backgroundColor === "yellow") {
+                    item.style.backgroundColor = "";
+                } else {
+                    item.style.backgroundColor = "yellow";
+                }
+            });
+        }
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
