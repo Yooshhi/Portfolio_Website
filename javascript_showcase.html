@@ -96,7 +96,7 @@
         <h2>How it Works</h2>
         <ol>
             <li>You type something into the input box.</li>
-            <li>When you click "Add", a JavaScript function runs.</li>
+            <li>When you click "Add" or press Enter, a JavaScript function runs.</li>
             <li>The function creates a new list item and inserts it into the existing list.</li>
             <li>You can also remove the last item or highlight all items using the new buttons.</li>
             <li>No page reload is needed — everything happens instantly in the browser!</li>
@@ -117,14 +117,16 @@
 
     <!-- JavaScript Functions -->
     <script>
+        const inputField = document.getElementById("newItem");
+
         function addItem() {
-            let input = document.getElementById("newItem").value;
+            let input = inputField.value;
             if (input.trim() !== "") {
                 let li = document.createElement("li");
                 li.textContent = input;
                 li.className = "list-group-item";
                 document.getElementById("learnList").appendChild(li);
-                document.getElementById("newItem").value = "";
+                inputField.value = "";
             }
         }
 
@@ -147,6 +149,13 @@
                 }
             });
         }
+
+        // Allow Enter key to trigger addItem()
+        inputField.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                addItem();
+            }
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
